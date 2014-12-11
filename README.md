@@ -6,14 +6,16 @@ An android demo about searching and playing youtube videos. You can set search c
 
 # Screenshot #
 
-The search result list.
+The search result list.  
 ![search result list][1]
 
-Set search condition.
+Set search condition.  
 ![set search condition][2]
 
 The video played by a videoview on the device without youtube app.
-![此处输入图片的描述][3]
+![played by videoview][3]
+
+
 
 ----------
 
