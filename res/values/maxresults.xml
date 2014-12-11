@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="maxresults">
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="order">
+        <item>date</item>
+        <item>rating</item>
+        <item>relevance</item>
+        <item>title</item>
+        <item>videoCount</item>
+        <item>viewCount</item>
+    </string-array>
+
+    <string-array name="safeSearch">
+        <item>none</item>
+        <item>moderate</item>
+        <item>strict</item>
+    </string-array>
+
+    <string-array name="videoDefinition">
+        <item>any</item>
+        <item>high</item>
+        <item>standard</item>
+    </string-array>
+
+    <string-array name="videoDuration">
+        <item>any</item>
+        <item>long</item>
+        <item>medium</item>
+        <item>short</item>
+    </string-array>
+
+    <string-array name="videoType">
+        <item>any</item>
+        <item>episode</item>
+        <item>movie</item>
+    </string-array>
+
+</resources>

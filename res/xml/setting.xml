@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Search Condition">
+        <ListPreference
+            android:key="maxResults"
+            android:title="Max Results"
+            android:dialogTitle="Max Results"
+            android:entries="@array/maxresults"
+            android:entryValues="@array/maxresults"
+            android:defaultValue="20"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="order"
+            android:title="order"
+            android:dialogTitle="Order"
+            android:entries="@array/order"
+            android:entryValues="@array/order"
+            android:defaultValue="relevance"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="safeSearch"
+            android:title="Safe Search"
+            android:dialogTitle="Safe Search"
+            android:entries="@array/safeSearch"
+            android:entryValues="@array/safeSearch"
+            android:defaultValue="none"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="videoDefinition"
+            android:title="Video Definition"
+            android:dialogTitle="Video Definition"
+            android:entries="@array/videoDefinition"
+            android:entryValues="@array/videoDefinition"
+            android:defaultValue="any"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="videoDuration"
+            android:title="Video Duration"
+            android:dialogTitle="Video Duration"
+            android:entries="@array/videoDuration"
+            android:entryValues="@array/videoDuration"
+            android:defaultValue="any"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="videoType"
+            android:title="Video Type"
+            android:dialogTitle="Video Type"
+            android:entries="@array/videoType"
+            android:entryValues="@array/videoType"
+            android:defaultValue="any"
+            android:summary="%s" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
