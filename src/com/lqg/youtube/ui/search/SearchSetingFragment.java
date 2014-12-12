@@ -19,9 +19,12 @@ import android.view.View;
 import com.lqg.youtube.R;
 import com.lqg.youtube.support.util.SearchSetting;
 
+import org.androidannotations.annotations.EFragment;
+
 /**
  * Created by LQG on 2014/12/8.
  */
+@EFragment
 public class SearchSetingFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private ActionBarDrawerToggle mDrawerToggle;

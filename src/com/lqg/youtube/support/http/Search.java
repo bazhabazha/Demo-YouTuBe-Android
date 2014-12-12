@@ -1,8 +1,12 @@
 package com.lqg.youtube.support.http;
 
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.http.HttpRequest;
 import com.google.api.client.http.HttpRequestInitializer;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.json.JsonFactory;
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.SearchListResponse;
 import com.lqg.youtube.support.util.LogUtil;
@@ -12,12 +16,16 @@ import java.io.IOException;
 
 public class Search {
 
+    public static final HttpTransport HTTP_TRANSPORT = AndroidHttp.newCompatibleTransport();
+
+    public static final JsonFactory JSON_FACTORY = new AndroidJsonFactory();
+
     public static String apiKey = "YOURAPIKEY";
 
     private static YouTube youtube;
 
     static {
-        youtube = new YouTube.Builder(Auth.HTTP_TRANSPORT, Auth.JSON_FACTORY, new HttpRequestInitializer() {
+        youtube = new YouTube.Builder(HTTP_TRANSPORT, JSON_FACTORY, new HttpRequestInitializer() {
             public void initialize(HttpRequest request) throws IOException {
             }
         }).setApplicationName("YOURAPPLICATIONNAME").build();

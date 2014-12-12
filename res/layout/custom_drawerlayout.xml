@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="#f5f5f5"
-        android:name="com.lqg.youtube.ui.search.SearchSetingFragment" />
+        android:name="com.lqg.youtube.ui.search.SearchSetingFragment_" />
 
 
 </android.support.v4.widget.DrawerLayout>

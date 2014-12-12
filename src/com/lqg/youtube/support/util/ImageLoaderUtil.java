@@ -20,9 +20,9 @@ public class ImageLoaderUtil {
     public static DisplayImageOptions createListPicDisplayImageOptions() {
 
         DisplayImageOptions options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.drawable.watermark)
-                .showImageForEmptyUri(R.drawable.watermark)
-                .showImageOnFail(R.drawable.watermark)
+                .showImageOnLoading(R.drawable.wb_pic_loading_large)
+                .showImageForEmptyUri(R.drawable.wb_pic_loading_large)
+                .showImageOnFail(R.drawable.wb_pic_loading_large)
                 .cacheInMemory(true)
                 .cacheOnDisc(true)
                         // .displayer(new FadeInBitmapDisplayer(100)).build();

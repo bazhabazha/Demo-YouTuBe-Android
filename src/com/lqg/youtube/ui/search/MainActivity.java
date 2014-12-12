@@ -26,11 +26,11 @@ public class MainActivity extends ActionBarActivity implements SearchView.OnQuer
     @ViewById(R.id.tl_custom)
     Toolbar toolbar;
 
-    SearchSetingFragment searchSetingFragment;
+    SearchSetingFragment_ searchSetingFragment;
 
     @AfterViews
     void afterViews() {
-        toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //设置标题颜色
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbar);
         searchSetingFragment = findSearchSetingFragment();
         searchSetingFragment.setup(R.id.drawcontainer, drawerLayout, toolbar);
@@ -53,8 +53,8 @@ public class MainActivity extends ActionBarActivity implements SearchView.OnQuer
         return (SearchFragment_) getSupportFragmentManager().findFragmentById(R.id.maincontainer);
     }
 
-    private SearchSetingFragment findSearchSetingFragment() {
-        return (SearchSetingFragment) getFragmentManager().findFragmentById(R.id.drawcontainer);
+    private SearchSetingFragment_ findSearchSetingFragment() {
+        return (SearchSetingFragment_) getFragmentManager().findFragmentById(R.id.drawcontainer);
     }
 
     boolean duplicate;
